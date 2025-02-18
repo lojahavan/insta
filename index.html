@@ -1234,6 +1234,23 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 	
 
 
+<script>
+let soundPlayed = false;
+
+function playSound() {
+    if (!soundPlayed) {
+        const audio = new Audio('https://lucrecomaopiniao.shop/venda/venda/cash.mp3');
+        audio.play();
+        soundPlayed = true;
+    }
+}
+
+// Pré-carregar o som para evitar atraso na execução
+const audio = new Audio('https://lucrecomaopiniao.shop/venda/venda/cash.mp3');
+audio.preload = 'auto';
+</script>
+
+<button onclick="playSound()">Clique para ouvir</button>
 
 
 
